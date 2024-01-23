@@ -1,0 +1,11 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 16px;
+}
+* {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+
+}
