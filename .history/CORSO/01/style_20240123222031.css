@@ -1,0 +1,24 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 1040px;
+    margin: auto;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo_container {
+    padding: 16px;
+}
+.banner {
+    padding: 12px;
+    background-color: #dec187;
+}
+* {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+
+}

@@ -106,7 +106,7 @@ footer img {
     color: #b5460f;
 }
 
-.subtitle {
+.subtitle:not(:last-of-type) {
     padding-top: 12px;
 }
 
