@@ -66,53 +66,14 @@ h4 {
     color: #414f5f;
 }
 
-/* FLEXBOX CLASSES */
-.flex {
-    display: flex;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
-.flex-row {
-    flex-direction: row;
-}
-
-.align-items-center {
-    align-items: center;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.justify-between {
-    justify-content: space-between;
-}
-
-.gap-m {
-    gap: 24px;
-}
-
-.gap-s {
-    gap: 16px;
-}
-
-.gap-xs {
-    gap: 12px;
-}
-
 /* CLASSES */
-.full-width {
-    width: 100%;
-}
-
 .logo-container {
+    width: 100%;
     padding: 24px 24px 16px;
 }
 
 .nav-container {
+    width: 100%;
     padding: 12px 24px;
 }
 
@@ -150,7 +111,7 @@ h4 {
     overflow: hidden; 
 }
 
-.item img, .full-width {
+.item img {
     width: 100%;
     object-fit: cover;
 }
@@ -184,12 +145,113 @@ h4 {
     left: 65%;
 }
 
+
+/* 
+Note:
+This CSS document has been written to correctly render the HTML page in two different ways:
+
+1. Flexbox:
+Uncomment the "FLEXBOX" block.
+Comment out the "DISPLAY INLINE-BLOCK" block.
+
+2. Display inline-block:
+Uncomment the "DISPLAY INLINE-BLOCK" block.
+Comment out the "FLEXBOX" block.
+ */
+
+/* FLEXBOX - START */
+.flex {
+    display: flex;
+}
+.col {
+    flex-direction: column;
+}
+.row {
+    flex-direction: row;
+}
+.align-items-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.gap-m {
+    gap: 24px;
+}
+.gap-s {
+    gap: 16px;
+}
+.gap-xs {
+    gap: 12px;
+}
+/* FLEXBOX - END */
+
+
+/* DISPLAY INLINE-BLOCK - START */
+/* li {
+    display: inline-block;
+    padding-right: 12px;
+}
+main > *:not(.banner) {
+    margin-bottom: 24px;
+}
+.hero {
+    display: block;
+    text-align: center;
+}
+h1 {
+    padding-top: 40px;
+}
+.hero span {
+    display: block;
+}
+h2, h3 {
+    display: inline-block;
+    margin-bottom: 24px;
+}
+h4 {
+    padding-top: 8px;
+}
+strong {
+    padding-left: 16px;
+}
+.carousel .item, .carousel-grid {
+    display: inline-block;
+    width: 24%;
+}
+.carousel .item:not(:last-of-type) {
+    margin-right: 0.66%;
+}
+.carousel-grid .row {
+    padding-bottom: 16px;
+}
+.carousel-grid .col {
+    display: inline-block;
+    width: 49%;
+}
+.carousel-grid:not(:last-of-type) {
+    margin-right: 1%;
+}
+.carousel-grid .col:not(:last-of-type) {
+    margin-right: 0.45%;
+}
+.banner div {
+    text-align: center;
+    padding-top: 12px;
+} */
+/* DISPLAY INLINE-BLOCK - END */
+
+
+/* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
-    .mb-flex-column {
+    .mb-col {
         flex-direction: column;
     }
     
-    .mb-flex-row {
+    .mb-row {
         flex-direction: row;
     }
 
