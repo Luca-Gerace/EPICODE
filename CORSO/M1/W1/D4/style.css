@@ -116,21 +116,13 @@ h4 {
     object-fit: cover;
 }
 
-.carousel .item {
+.carousel .item, .carousel .item img {
     height: 350px;
 }
 
-.carousel .item img {
-    height: 350px;
-}
-
-.carousel-grid .item {
+.carousel-grid .item, .carousel-grid .item img {
     height: 125px;
     max-width: 200px;
-}
-
-.carousel-grid .item img {
-    height: 125px;
 }
 
 .carousel-grid .item.badge:after {
