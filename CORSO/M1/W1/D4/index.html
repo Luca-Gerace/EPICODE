@@ -8,13 +8,17 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!-- Header -->
+        <header>
 
-        <header>  
-            <div class="logo_container bg_primary_500">
+            <!-- Logo -->
+            <div class="logo-container bg-primary-500">
                 <img src="assets/logo.png" alt="logo" class="logo" width="150px">
             </div>
-            <nav class="nav_container bg_primary_400">
-                <ul>
+
+            <!-- Navbar -->
+            <nav class="nav-container bg-primary-400">
+                <ul class="flex gap-m">
                     <li>
                         <a href="#">All</a>
                     </li>
@@ -35,82 +39,208 @@
                     </li>
                 </ul>
             </nav>
+
         </header>
 
-        <main class="flex flex_column gap_m">
+        <!-- Main -->
+        <main class="flex flex-column gap-m">
 
-            <a href="#" class="promo full_width">
+            <!-- Promo banner -->
+            <a href="#" class="promo full-width">
                 <span>Shop all holiday gift cards</span>
             </a>
 
-            <a href="#" class="hero full_width flex flex_column align_items_center justify_center">
+            <!-- Hero banner -->
+            <a href="#" class="hero full-width flex flex-column align-items-center justify-center">
                 <h1>Holiday Gift Guides</h1>
                 <span>Be a go-gifter</span>
             </a>
-            
-            <section class="carousel flex flex_column  gap_s">
-                <div class="flex flex_row align_items_center gap_s">
+
+            <!-- Section - Card Carousel -->            
+            <section class="carousel flex flex-column gap-s">
+                <div class="flex flex-row align-items-center gap-s">
                     <h2>Find the perfect gift</h2>
-                    <a href="#" class="primary_400">
+                    <a href="#" class="primary-400">
                         <strong>Shop now</strong>
                     </a>
                 </div>
-                <div class="flex flex_row mb_flex_column align_items_center justify_between gap_m">
-                    <a class="product" href="#">
+                <div class="flex flex-row mb-flex-column align-items-center justify-between gap-m">
+                    <a class="item" href="#">
                         <img src="assets/img_1.jpg" alt="product" />
                     </a>
-                    <a class="product" href="#">
+                    <a class="item" href="#">
                         <img src="assets/img_2.jpg" alt="product" />
                     </a>
-                    <a class="product" href="#">
+                    <a class="item" href="#">
                         <img src="assets/img_3.jpg" alt="product" />
                     </a>
-                    <a class="product" href="#">
+                    <a class="item" href="#">
                         <img src="assets/img_4.jpg" alt="product" />
                     </a>
                 </div>
             </section>
 
-            <section class="banner flex flex_column align_items_center gap_s">
+            <!-- Section - Card Carousel Grids -->
+            <section class="flex flex-row mb-flex-column gap-m">
+                <!-- Grid #1 -->
+                <div class="carousel-grid flex flex-column gap-s">
+                    <div>
+                        <h2>Gaming accessories</h2>
+                    </div>
+                    <div class="flex flex-row align-items-center justify-between gap-s">
+                        <a class="flex flex-column gap-xs" href="#">
+                            <div class="item badge">
+                                <img src="assets/img_15.jpg" alt="product" />
+                            </div>
+                            <h4>Headsets</h4>
+                        </a>
+                        <a class="flex flex-column gap-xs" href="#">
+                            <div class="item">
+                                <img src="assets/img_16.jpg" alt="product" />
+                            </div>
+                            <h4>Keyboards</h4>
+                        </a>
+                    </div>
+                    <div class="flex flex-row align-items-center justify-between gap-s">
+                        <a class="flex flex-column gap-xs" href="#">
+                            <div class="item">
+                                <img src="assets/img_17.jpg" alt="product" />
+                            </div>
+                            <h4>Computer mice</h4>
+                        </a>
+                        <a class="flex flex-column gap-xs" href="#">
+                            <div class="item badge">
+                                <img src="assets/img_18.jpg" alt="product" />
+                            </div>
+                            <h4>Chairs</h4>
+                        </a>
+                    </div>
+                    <a href="#" class="primary-400"><b>See more</b></a>
+                </div>
+                <!-- Grid #2 -->
+                <div class="carousel-grid flex flex-column gap-s">
+                    <div>
+                        <h2>Add joy to their wish list</h2>
+                    </div>
+                    <div class="flex flex-row align-items-center justify-between gap-s">
+                        <a class="flex flex-column gap-xs" href="#">
+                            <div class="item badge">
+                                <img src="assets/img_24.jpg" alt="product" />
+                            </div>
+                            <h4>Holiday toy list</h4>
+                        </a>
+                        <a class="flex flex-column gap-xs" href="#">
+                            <div class="item">
+                                <img src="assets/img_25.jpg" alt="product" />
+                            </div>
+                            <h4>Electronic Gifts</h4>
+                        </a>
+                    </div>
+                    <div class="flex flex-row align-items-center justify-between gap-s">
+                        <a class="flex flex-column gap-xs" href="#">
+                            <div class="item">
+                                <img src="assets/img_26.jpg" alt="product" />
+                            </div>
+                            <h4>Home Gifts</h4>
+                        </a>
+                        <a class="flex flex-column gap-xs" href="#">
+                            <div class="item badge">
+                                <img src="assets/img_27.jpg" alt="product" />
+                            </div>
+                            <h4>Fashion Gifts</h4>
+                        </a>
+                    </div>
+                    <a href="#" class="primary-400"><b>Shop all gift guides</b></a>
+                </div>
+                <!-- Grid #3 -->
+                <div class="carousel-grid flex flex-column gap-s">
+                    <div>
+                        <h2>Comfy styles</h2>
+                    </div>
+                    <div class="flex flex-row align-items-center justify-between gap-s">
+                        <a class="flex flex-column gap-xs" href="#">
+                            <div class="item">
+                                <img src="assets/img_19.jpg" alt="product" />
+                            </div>
+                            <h4>Sweatshirts</h4>
+                        </a>
+                        <a class="flex flex-column gap-xs" href="#">
+                            <div class="item badge">
+                                <img src="assets/img_19.jpg" alt="product" />
+                            </div>
+                            <h4>Joggers</h4>
+                        </a>
+                    </div>
+                    <div class="flex flex-row align-items-center justify-between gap-s">
+                        <a class="flex flex-column gap-xs" href="#">
+                            <div class="item badge">
+                                <img src="assets/img_19.jpg" alt="product" />
+                            </div>
+                            <h4>Cardigans</h4>
+                        </a>
+                        <a class="flex flex-column gap-xs" href="#">
+                            <div class="item">
+                                <img src="assets/img_19.jpg" alt="product" />
+                            </div>
+                            <h4>Easy tees</h4>
+                        </a>
+                    </div>
+                    <a href="#" class="primary-400"><b>See more</b></a>
+                </div>
+                <!-- Grid #4 -->
+                <div class="carousel-grid flex flex-column gap-s">
+                    <div>
+                        <h2>Holiday Gifts</h2>
+                    </div>
+                    <div class="flex flex-row align-items-center justify-between gap-s">
+                        <a class="flex flex-column gap-xs" href="#">
+                            <div class="item badge">
+                                <img src="assets/img_11.jpg" alt="product" />
+                            </div>
+                            <h4>Electronics</h4>
+                        </a>
+                        <a class="flex flex-column gap-xs" href="#">
+                            <div class="item">
+                                <img src="assets/img_12.jpg" alt="product" />
+                            </div>
+                            <h4>Fashion</h4>
+                        </a>
+                    </div>
+                    <div class="flex flex-row align-items-center justify-between gap-s">
+                        <a class="flex flex-column gap-xs" href="#">
+                            <div class="item">
+                                <img src="assets/img_13.jpg" alt="product" />
+                            </div>
+                            <h4>Toys</h4>
+                        </a>
+                        <a class="flex flex-column gap-xs" href="#">
+                            <div class="item badge">
+                                <img src="assets/img_14.jpg" alt="product" />
+                            </div>
+                            <h4>Beauty</h4>
+                        </a>
+                    </div>
+                    <a href="#" class="primary-400"><b>Shop all gift guides</b></a>
+                </div>
+            </section>
+
+            <!-- Section - Banner #1 -->
+            <section class="banner flex flex-column align-items-center gap-s">
                 <img src="assets/img_9.png" alt="gaming">
-                <div class="flex flex_row align_items_center gap_s">
+                <div class="flex flex-row align-items-center gap-s">
                     <h3>Play the gifting game</h3>
-                    <a href="#" class="primary_400">
+                    <a href="#" class="primary-400">
                         <strong>Shop gaming</strong>
                     </a>
                 </div>    
             </section>
 
-            <section class="carousel flex flex_column gap_s">
-                <div class="flex flex_row align_items_center align_items_center gap_s">
-                    <h2>Find the perfect gift</h2>
-                    <a href="#" class="primary_400">
-                        <strong>
-                            Shop now
-                        </strong>
-                    </a>
-                </div>
-                <div class="flex flex_row mb_flex_column align_items_center justify_between gap_m">
-                    <a class="product" href="#">
-                        <img src="assets/img_19.jpg" alt="product" />
-                    </a>
-                    <a class="product" href="#">
-                        <img src="assets/img_20.jpg" alt="product" />
-                    </a>
-                    <a class="product" href="#">
-                        <img src="assets/img_21.jpg" alt="product" />
-                    </a>
-                    <a class="product" href="#">
-                        <img src="assets/img_22.jpg" alt="product" />
-                    </a>
-                </div>
-            </section>
-
-            <section class="banner flex flex_column align_items_center gap_s">
+            <!-- Section - Banner #2 -->
+            <section class="banner flex flex-column align-items-center gap-s">
                 <img src="assets/img_10.png" alt="audio and accessories">
-                <div class="flex flex_row align_items_center gap_s">
+                <div class="flex flex-row align-items-center gap-s">
                     <h3>The sound of cheer game</h3>
-                    <a href="#" class="primary_400">
+                    <a href="#" class="primary-400">
                         <strong>
                             Shop audio & Accessories
                         </strong>
@@ -120,15 +250,21 @@
 
         </main>
 
-        <footer class="flex flex_column align_items_center justify_center">
-            <div class="nav_container full_width bg_primary_400">
+        <!-- Footer -->
+        <footer class="flex flex-column align-items-center justify-center">
+            
+            <!-- Back to to -->
+            <div class="nav-container full-width bg-primary-400">
                 <a href="#">
                     <u>Back to top</u>
                 </a>
             </div>
-            <div class="logo_container full_width bg_primary_500">
+
+            <!-- Logo -->
+            <div class="logo-container full-width bg-primary-500">
                 <img src="assets/logo.png" alt="logo" width="150px">
             </div>
+
         </footer>
     </body>
 </html>
