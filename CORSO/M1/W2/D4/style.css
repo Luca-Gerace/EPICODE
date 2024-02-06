@@ -16,14 +16,11 @@ a {
 }
 
 
-/* -------------------------------- */
 /* ------------- TAGS ------------- */
-/* -------------------------------- */
 
 body {
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
-    position: fixed;
 }
 
 header {
@@ -32,6 +29,11 @@ header {
     background-color: #fff;
     border-bottom: 1px solid #f0f0f0;
     box-shadow: 0px 12px 16px #f0f0f0;
+    position: fixed;
+}
+
+main {
+    padding-top: 64px;
 }
 
 section, aside {
@@ -41,52 +43,34 @@ section, aside {
 }
 
 aside {
-    min-width: 460px;
     border-left: 1px solid #ddd;
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
-p, span, .bottom-link {
-    color: #767676;
+h3 {
+    font-size: 18px;
 }
 
 span {
     font-size: 14px;
 }
 
+p, span, .bottom-link, .tabs {
+    color: #767676;
+}
 
-/* -------------------------------- */
+
 /* ---------- COMPONENTS ---------- */
-/* -------------------------------- */
 
 /* LOGO */
 .logo {
     width: 200px;
 }
 
-/* BUTTON */
-.button {
-    border: 1px solid #000;
-    border-radius: 24px;
-    padding: 8px 16px;
-    text-align: center;
-}
-.button:hover {
-    background-color:#000;
-    color: #fff;
-}
-
-/* USER IMG CONTAINER */
-#user {
-    display: block;
-    background-image: url('assets/supermario.jpeg');
-    background-position: center;
-    background-size: cover;
-    border: 2px solid red;
-}
+/* AVATAR CONTAINER */
 .circle {
     border-radius: 50%;
 }
@@ -97,35 +81,6 @@ span {
 .circle.size-s {
     width: 24px;
     height: 24px;
-}
-
-/* TABS */
-.tabs {
-    color: #767676;
-    border-bottom: 1px solid #ddd;
-}
-.tabs > * {
-    font-weight: bold;
-    padding: 0 32px 16px;  
-    text-transform: uppercase;
-}
-.tabs > *:hover, .tabs .active {
-    color: #000;
-    border-bottom: 1px solid #000;   
-}
-
-/* SINGLE NEWS CONTAINER */  
-.news-img {
-    height: 200px;
-}
-.news-details li:not(:first-child) {
-    list-style: disc;
-    margin-left: 8px;
-    padding-left: 4px;
-}
-li::marker {
-    color: #767676;
-    font-size: 10px;
 }
 
 /* BADGE */
@@ -140,17 +95,16 @@ li::marker {
     padding: 4px 8px;
 }
 
-/* BRAND SECTION */
-.brand {
+/* BUTTON */
+.button {
+    border: 1px solid #000;
+    border-radius: 24px;
+    padding: 8px 16px;
     text-align: center;
 }
-.brand p {
-    color: #000;
-    font-size: 18px;
-    padding: 0 16px;
-}
-.brand .bottom-link {
-    text-decoration: underline;
+.button:hover {
+    background-color:#000;
+    color: #fff;
 }
 
 /* DIVIDER */
@@ -158,31 +112,25 @@ li::marker {
     border-bottom: 1px solid #ddd;
 }
 
-/* FOLLOWER SECTION */
-.follower-info strong {
-    font-size: 18px;
-    display: block;
+/* TABS */
+.tabs {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
 }
-.follower-info span {
-    font-size: 14px;
+.tabs > * {
+    padding: 0 32px 16px;  
+}
+.tabs > *:hover, .tabs .active {
+    color: #000;
+    border-bottom: 1px solid #000;   
 }
 
-/* SAVED NEWS SECTION */
-.link {
-    padding-top: 24px;
-    color: green;
-}
 
-
-/* --------------------------------- */
 /* --------- FLEXBOX RULES --------- */
-/* --------------------------------- */
 
 .flex {
     display: flex;
-}
-.row {
-    flex-direction: row;
 }
 .col {
     flex-direction: column;
@@ -193,14 +141,11 @@ li::marker {
 .aic {
     align-items: center;
 }
-.aife {
-    align-items: flex-end;
-}
-/* .jcc {
-    justify-content: center;
-} */
 .jcsb {
     justify-content: space-between;
+}
+.fbfull {
+    flex-basis: 100%;
 }
 .gap-xl {
     gap: 64px;
@@ -225,52 +170,47 @@ li::marker {
 }
 
 
-/* -------------------------------- */
-/* HACK ICONS SWITCHING, Waiting JS */
-/* -------------------------------- */
+/* ---------- OTHER CONTENTS ---------- */
 
-.none {
-    display: none;
-}
-a.icon {
+/* USER ICON */
+#user {
     display: block;
-    width: 24px;
-    text-align: center;
+    background-image: url('assets/supermario.jpeg');
+    background-position: center;
+    background-size: cover;
+    border: 2px solid red;
 }
-a.icon:hover i:first-child {
-    display: none;
-} 
-a.icon:hover i:last-child {
-    display: block !important;
-} 
 
+/* NEWS DETAILS */  
+.news-details li:not(:first-child) {
+    list-style: disc;
+    margin-left: 8px;
+    padding-left: 4px;
+}
+li::marker {
+    color: #767676;
+    font-size: 10px;
+}
 
-/* MEDIA QUERIES - MOBILE ONLY */
-@media only screen and (max-width: 380px) {
-    body {
-        position: unset;
-    }
-    header {
-        position: fixed;
-        top: 0;
-    }
-    header, section {
-        padding: 16px;
-    }
-    .mb-none {
-        display: none;
-    }
+/* BRAND SECTION */
+.brand p {
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    padding: 0 32px;
+}
+.brand-icon {
+    font-size: 40px;
+}
+.fa-twitter {
+    color: #199BF0;
+}
+.brand-link {
+    text-decoration: underline;
+}
 
-    .mb-col {
-        flex-direction: column;
-    }
-    
-    .mb-row {
-        flex-direction: row;
-    }
-
-    .carousel-grid .item.badge:after {
-        left: 75%;
-    }
-    
+/* SAVED NEWS LINK */
+.link {
+    padding-top: 24px;
+    color: green;
 }
